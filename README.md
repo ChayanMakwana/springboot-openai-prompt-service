@@ -15,3 +15,8 @@ This is a small project to get hands-on experience with using OpenAI's GPT API i
    ```bash
    ./mvnw spring-boot:run
 
+### Sample request
+
+curl -X POST http://localhost:8080/api/ai/chat \
+-H "Content-Type: application/json" \
+-d '{"prompt": "Explain Java streams"}'
